@@ -4,6 +4,7 @@ project(move_base_msgs)
 find_package(catkin REQUIRED
   COMPONENTS
     message_generation
+    nav_msgs
     actionlib_msgs
     geometry_msgs
 )
@@ -17,6 +18,7 @@ add_action_files(
 
 generate_messages(
   DEPENDENCIES
+    nav_msgs
     actionlib_msgs
     geometry_msgs
 )
